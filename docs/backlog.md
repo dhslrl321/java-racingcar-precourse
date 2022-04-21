@@ -21,8 +21,6 @@
   - [ground-rule.md](https://github.com/dhslrl321/java-racingcar-precourse/blob/master/docs/ground-rule.md)
 - `BL-002`
   - domain 을 정의하고 domain 을 모델링한다
-  - [도메인 정의]()
-  - [도메인 모델링]()
 - `BL-003`
   - Intellij 에 Code-Style 을 적용한다
   - [intellij-code-style.xml](https://github.com/dhslrl321/java-racingcar-precourse/blob/master/docs/convention)

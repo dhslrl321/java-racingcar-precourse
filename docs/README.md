@@ -20,6 +20,16 @@
   - 가장 많이 간 자동차
     > 전진 조건 (`random >= 4`) 에 가장 많이 포함된 자동차
 
+# Diagram
+
+## Domain
+
+![domain](https://github.com/dhslrl321/java-racingcar-precourse/blob/master/docs/images/domain.png)
+
+## Domain Modeling
+
+![domain](https://github.com/dhslrl321/java-racingcar-precourse/blob/master/docs/images/domain-modeling.png)
+
 ## 문서
 
 - [I/O 정의 및 문서화](https://github.com/dhslrl321/java-racingcar-precourse/blob/master/docs/io-example.md)
