@@ -2,6 +2,7 @@ package racingcar.domain;
 
 public class Car {
 
+    public static final String DASH = "-";
     private final String carName;
     private final StringBuilder distance = new StringBuilder("");
 
@@ -13,11 +14,15 @@ public class Car {
         return new Car(carName);
     }
 
-    public void moveByNumber(int i) {
-        if (i < 4) {
+    public void moveByNumber(int number) {
+        if (isUnderFour(number)) {
             return;
         }
-        distance.append("-");
+        distance.append(DASH);
+    }
+
+    private boolean isUnderFour(int number) {
+        return number < 4;
     }
 
     public String getMovedDistance() {
