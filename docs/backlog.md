@@ -25,8 +25,14 @@
   - Intellij 에 Code-Style 을 적용한다
   - [intellij-code-style.xml](https://github.com/dhslrl321/java-racingcar-precourse/blob/master/docs/convention)
 - `BL-004`
+  - Presenter 에 대해서 구현한다
 - `BL-005`
+  - 게임의 핵심 비즈니스 로직에 대해서 구현한다.
+    - `RaceRound`, `Cars`, `Cars` 
 - `BL-006`
+  - 게임 결과와 관련된 Handler 를 구현한다.
+    - `RaceResult`, `RaceResultHandler`
 - `BL-007`
+  - Presenter 과 Model  을 연결한다
 - `BL-008`
 - `BL-009`
