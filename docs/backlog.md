@@ -29,7 +29,8 @@
   - [Github PR](https://github.com/dhslrl321/java-racingcar-precourse/pull/1)
 - `BL-005`
   - 게임의 핵심 비즈니스 로직에 대해서 구현한다.
-    - `RaceRound`, `Cars`, `Cars` 
+    - `RaceRound`, `Cars`, `Cars`
+  - [Github PR](https://github.com/dhslrl321/java-racingcar-precourse/pull/2)
 - `BL-006`
   - 게임 결과와 관련된 Handler 를 구현한다.
     - `RaceResult`, `RaceResultHandler`
