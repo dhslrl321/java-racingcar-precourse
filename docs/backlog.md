@@ -26,6 +26,7 @@
   - [intellij-code-style.xml](https://github.com/dhslrl321/java-racingcar-precourse/blob/master/docs/convention)
 - `BL-004`
   - Presenter 에 대해서 구현한다
+  - [Github PR](https://github.com/dhslrl321/java-racingcar-precourse/pull/1)
 - `BL-005`
   - 게임의 핵심 비즈니스 로직에 대해서 구현한다.
     - `RaceRound`, `Cars`, `Cars` 
