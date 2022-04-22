@@ -35,8 +35,7 @@ class CarTest {
 
         assertThat(sut.getMovedDistance()).isEqualTo(DISTANCE_ZERO);
 
-        sut.moveByNumber(1);
-        sut.moveByNumber(2);
+        sut.moveByNumber(0);
         sut.moveByNumber(3);
 
         assertThat(sut.getMovedDistance()).isEqualTo(DISTANCE_ZERO);
