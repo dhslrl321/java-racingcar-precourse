@@ -5,9 +5,13 @@ import racingcar.domain.RaceResult;
 
 public class GameResultHandler {
 
+    public static final String COMMA_DELIMITER = ", ";
+    public static final String SPACE = " ";
+    public static final String EMPTY_STRING = "";
+
     public String pickWinner(RaceResult result) {
 
-        StringBuilder resultBuilder = new StringBuilder("");
+        StringBuilder resultBuilder = new StringBuilder(EMPTY_STRING);
         int longestDistance = result.longestDistance();
 
         Map<String, String> map = result.eachCarPosition();
@@ -21,12 +25,12 @@ public class GameResultHandler {
 
     private String separateToComma(StringBuilder resultBuilder) {
         String result = resultBuilder.toString();
-        return String.join(", ", result.split(" "));
+        return String.join(COMMA_DELIMITER, result.split(SPACE));
     }
 
     private void winner(String name, String distance, int longestDistance, StringBuilder resultBuilder) {
         if (isSame(distance.length(), longestDistance)) {
-            resultBuilder.append(name).append(" ");
+            resultBuilder.append(name).append(SPACE);
         }
     }
 

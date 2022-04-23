@@ -6,6 +6,9 @@ import java.util.Map;
 
 public class RaceResult {
 
+    public static final String EMPTY_STRING = "";
+    public static final String RACE_TO_STRING_FORMAT = "%s : %s\n";
+
     private final Map<String, String> map;
 
     private RaceResult(Map<String, String> map) {
@@ -36,10 +39,10 @@ public class RaceResult {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder("");
+        StringBuilder sb = new StringBuilder(EMPTY_STRING);
         for (String key : map.keySet()) {
             String item = map.get(key);
-            sb.append(String.format("%s : %s\n", key, item));
+            sb.append(String.format(RACE_TO_STRING_FORMAT, key, item));
         }
 
         return sb.toString();
