@@ -18,6 +18,7 @@ public class Car {
         if (isUnderFour(number)) {
             return;
         }
+        
         distance.append(DASH);
     }
 
