@@ -20,17 +20,6 @@ public class RaceResult {
         return new RaceResult(map);
     }
 
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder("");
-        for (String key : map.keySet()) {
-            String item = map.get(key);
-            sb.append(String.format("%s : %s\n", key, item));
-        }
-
-        return sb.toString();
-    }
-
     public int longestDistance() {
         int longestDistance = Integer.MIN_VALUE;
         for (String key : map.keySet()) {
@@ -43,5 +32,16 @@ public class RaceResult {
 
     public Map<String, String> eachCarPosition() {
         return map;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder("");
+        for (String key : map.keySet()) {
+            String item = map.get(key);
+            sb.append(String.format("%s : %s\n", key, item));
+        }
+
+        return sb.toString();
     }
 }

@@ -13,6 +13,10 @@ public class GameConsole {
         return new GameConsole();
     }
 
+    public void printMessage(String message) {
+        System.out.println(message);
+    }
+
     public void printResultMessage(String message) {
         System.out.println("최종 우승자: " + message);
     }

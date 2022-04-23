@@ -32,7 +32,7 @@ public class CarRacingGame {
         for (int i = 0; i < times; i++) {
             RaceRound raceRound = RaceRound.of(cars, randomUtil);
             lastRaceResult = raceRound.race();
-            System.out.println(lastRaceResult);
+            console.printMessage(lastRaceResult.toString());
         }
         return lastRaceResult;
     }
