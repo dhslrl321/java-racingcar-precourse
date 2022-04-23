@@ -5,12 +5,10 @@
 - [x] `BL-001`
 - [x] `BL-002`
 - [x] `BL-003`
-- [ ] `BL-004`
-- [ ] `BL-005`
-- [ ] `BL-006`
+- [x] `BL-004`
+- [x] `BL-005`
+- [x] `BL-006`
 - [ ] `BL-007`
-- [ ] `BL-008`
-- [ ] `BL-009`
 
 # Backlog
 
@@ -34,7 +32,6 @@
 - `BL-006`
   - 게임 결과와 관련된 Handler 를 구현한다.
     - `RaceResult`, `RaceResultHandler`
+  - [Github PR](https://github.com/dhslrl321/java-racingcar-precourse/pull/3)
 - `BL-007`
-  - Presenter 과 Model  을 연결한다
 - `BL-008`
-- `BL-009`
