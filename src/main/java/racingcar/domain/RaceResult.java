@@ -16,7 +16,7 @@ public class RaceResult {
     }
 
     public static RaceResult of(List<Car> cars) {
-         Map<String, String> map = new HashMap<>();
+        Map<String, String> map = new HashMap<>();
         for (Car car : cars) {
             map.put(car.getName(), car.getMovedDistance());
         }

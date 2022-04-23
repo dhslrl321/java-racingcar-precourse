@@ -29,6 +29,7 @@ public class CarRacingGame {
 
     private RaceResult raceWithTimes(int times, List<Car> cars) {
         RaceResult lastRaceResult = null;
+
         for (int i = 0; i < times; i++) {
             RaceRound raceRound = RaceRound.of(cars, randomUtil);
             lastRaceResult = raceRound.race();

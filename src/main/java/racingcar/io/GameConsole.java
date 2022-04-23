@@ -7,7 +7,8 @@ public class GameConsole {
 
     private final InputReader reader = new InputReader();
 
-    private GameConsole() {}
+    private GameConsole() {
+    }
 
     public static GameConsole create() {
         return new GameConsole();
@@ -26,7 +27,7 @@ public class GameConsole {
         do {
             System.out.println(GREETING_MESSAGE);
             input = readLineWithHandleException();
-        } while(RETRY_STRING.equals(input));
+        } while (RETRY_STRING.equals(input));
         return input;
     }
 
@@ -35,7 +36,7 @@ public class GameConsole {
         do {
             System.out.println("시도할 회수는 몇회인가요?\n");
             round = readNumberWithHandleException();
-        } while(round == RETRY_INTEGER);
+        } while (round == RETRY_INTEGER);
         return round;
     }
 
