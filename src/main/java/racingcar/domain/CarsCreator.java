@@ -7,7 +7,8 @@ public class CarsCreator {
 
     private static final String COMMA = ",";
 
-    private CarsCreator() {}
+    private CarsCreator() {
+    }
 
     public static CarsCreator create() {
         return new CarsCreator();

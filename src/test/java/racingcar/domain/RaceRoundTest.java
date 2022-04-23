@@ -13,7 +13,6 @@ import org.junit.jupiter.api.Test;
 import racingcar.util.RandomUtil;
 
 class RaceRoundTest {
-    final int RACE_ROUND_NUMBER = 3;
     final int CAR_COUNT = 2;
 
     RaceRound sut;
@@ -28,7 +27,7 @@ class RaceRoundTest {
         List<Car> list = new ArrayList<>();
         list.add(car1);
         list.add(car2);
-        sut = RaceRound.of(3, list, randomUtil);
+        sut = RaceRound.of(list, randomUtil);
     }
 
     @Test
@@ -38,11 +37,9 @@ class RaceRoundTest {
 
         sut.race();
 
-        int randomTimes = RACE_ROUND_NUMBER * CAR_COUNT;
-
-        verify(randomUtil, times(randomTimes)).pickRaceNumber();
-        verify(car1, times(RACE_ROUND_NUMBER)).moveByNumber(random);
-        verify(car2, times(RACE_ROUND_NUMBER)).moveByNumber(random);
+        verify(randomUtil, times(CAR_COUNT)).pickRaceNumber();
+        verify(car1).moveByNumber(random);
+        verify(car2).moveByNumber(random);
     }
 
     @Test
