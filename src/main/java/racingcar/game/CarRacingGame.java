@@ -1,7 +1,6 @@
 package racingcar.game;
 
-import java.util.List;
-import racingcar.domain.Car;
+import racingcar.domain.Cars;
 import racingcar.domain.CarsCreator;
 import racingcar.domain.RaceResult;
 import racingcar.domain.RaceRound;
@@ -18,7 +17,7 @@ public class CarRacingGame {
     public void run() {
         String carNames = console.queryCarNames();
 
-        List<Car> cars = carsCreator.createCarsBy(carNames);
+        Cars cars = carsCreator.createCarsBy(carNames);
         int round = console.queryRound();
         RaceResult latestRaceResult = raceWithTimes(round, cars);
 
@@ -27,7 +26,7 @@ public class CarRacingGame {
     }
 
 
-    private RaceResult raceWithTimes(int times, List<Car> cars) {
+    private RaceResult raceWithTimes(int times, Cars cars) {
         RaceResult lastRaceResult = null;
 
         for (int i = 0; i < times; i++) {

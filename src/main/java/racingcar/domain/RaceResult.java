@@ -1,7 +1,6 @@
 package racingcar.domain;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class RaceResult {
@@ -15,9 +14,9 @@ public class RaceResult {
         this.map = map;
     }
 
-    public static RaceResult of(List<Car> cars) {
+    public static RaceResult of(Cars cars) {
         Map<String, String> map = new HashMap<>();
-        for (Car car : cars) {
+        for (Car car : cars.toList()) {
             map.put(car.getName(), car.getMovedDistance());
         }
         return new RaceResult(map);

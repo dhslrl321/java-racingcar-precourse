@@ -6,8 +6,6 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
-import java.util.ArrayList;
-import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import racingcar.util.RandomUtil;
@@ -24,7 +22,7 @@ class RaceRoundTest {
 
     @BeforeEach
     void setUp() {
-        List<Car> list = new ArrayList<>();
+        Cars list = Cars.empty();
         list.add(car1);
         list.add(car2);
         sut = RaceRound.of(list, randomUtil);
