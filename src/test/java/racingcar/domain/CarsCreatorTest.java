@@ -12,7 +12,7 @@ class CarsCreatorTest {
     void 문자열을_받으면_Cars_를_생성한다() {
         sut = CarsCreator.create();
 
-        List<Car> cars = sut.createCarsBy("a,b,c");
+        Cars cars = sut.createCarsBy("a,b,c");
 
         assertThat(cars.size()).isEqualTo(3);
         assertThat(cars.size()).isNotEqualTo(4);

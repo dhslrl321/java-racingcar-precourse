@@ -4,8 +4,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
 
-import java.util.ArrayList;
-import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -17,7 +15,7 @@ class RaceResultTest {
 
     @BeforeEach
     void setUp() {
-        List<Car> cars = new ArrayList<>();
+        Cars cars = Cars.empty();
 
         stubWith(car1, "A", "-");
         stubWith(car2, "B", "--");

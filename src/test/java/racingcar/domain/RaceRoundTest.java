@@ -24,7 +24,7 @@ class RaceRoundTest {
 
     @BeforeEach
     void setUp() {
-        List<Car> list = new ArrayList<>();
+        Cars list = Cars.empty();
         list.add(car1);
         list.add(car2);
         sut = RaceRound.of(list, randomUtil);

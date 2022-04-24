@@ -5,15 +5,15 @@ import racingcar.util.RandomUtil;
 
 public class RaceRound {
 
-    private final List<Car> cars;
+    private final Cars cars;
     private final RandomUtil randomUtil;
 
-    private RaceRound(List<Car> cars, RandomUtil randomUtil) {
+    private RaceRound(Cars cars, RandomUtil randomUtil) {
         this.cars = cars;
         this.randomUtil = randomUtil;
     }
 
-    public static RaceRound of(List<Car> cars, RandomUtil randomUtil) {
+    public static RaceRound of(Cars cars, RandomUtil randomUtil) {
         return new RaceRound(cars, randomUtil);
     }
 
@@ -23,7 +23,7 @@ public class RaceRound {
     }
 
     private void moveCarWithRandomNumber() {
-        for (Car car : cars) {
+        for (Car car : cars.toList()) {
             int random = randomUtil.pickRaceNumber();
             car.moveByNumber(random);
         }
