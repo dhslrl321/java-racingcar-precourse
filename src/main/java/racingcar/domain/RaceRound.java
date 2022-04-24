@@ -1,6 +1,5 @@
 package racingcar.domain;
 
-import java.util.List;
 import racingcar.util.RandomUtil;
 
 public class RaceRound {
