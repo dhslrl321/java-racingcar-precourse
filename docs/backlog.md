@@ -34,4 +34,5 @@
     - `RaceResult`, `RaceResultHandler`
   - [Github PR](https://github.com/dhslrl321/java-racingcar-precourse/pull/3)
 - `BL-007`
+  - 일반 컬렉션을 일급 컬렉션으로 변경한다.
 - `BL-008`
