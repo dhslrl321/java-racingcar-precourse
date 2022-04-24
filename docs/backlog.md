@@ -8,7 +8,8 @@
 - [x] `BL-004`
 - [x] `BL-005`
 - [x] `BL-006`
-- [ ] `BL-007`
+- [x] `BL-007`
+- [ ] `BL-008`
 
 # Backlog
 
@@ -34,5 +35,7 @@
     - `RaceResult`, `RaceResultHandler`
   - [Github PR](https://github.com/dhslrl321/java-racingcar-precourse/pull/3)
 - `BL-007`
-  - 일반 컬렉션을 일급 컬렉션으로 변경한다.
+  - 일반 컬렉션을 일급 컬렉션으로 변경한다
+  - [Github PR](https://github.com/dhslrl321/java-racingcar-precourse/pull/4)
 - `BL-008`
+  - 프로젝트를 리팩토링한다
