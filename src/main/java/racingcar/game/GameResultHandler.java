@@ -9,6 +9,12 @@ public class GameResultHandler {
     public static final String SPACE = " ";
     public static final String EMPTY_STRING = "";
 
+    private GameResultHandler() {}
+
+    public static GameResultHandler create() {
+        return new GameResultHandler();
+    }
+
     public String pickWinner(RaceResult result) {
 
         StringBuilder resultBuilder = new StringBuilder(EMPTY_STRING);
