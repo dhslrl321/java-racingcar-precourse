@@ -15,7 +15,7 @@ class GameResultHandlerTest {
 
     @BeforeEach
     void setUp() {
-        sut = new GameResultHandler();
+        sut = GameResultHandler.create();
     }
 
     @Test

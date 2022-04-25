@@ -11,8 +11,8 @@ public class CarRacingGame {
 
     private final GameConsole console = GameConsole.create();
     private final CarsCreator carsCreator = CarsCreator.create();
-    private final GameResultHandler resultHandler = new GameResultHandler();
-    private final RandomUtil randomUtil = new RandomUtil();
+    private final GameResultHandler resultHandler = GameResultHandler.create();
+    private final RandomUtil randomUtil = RandomUtil.create();
 
     public void run() {
         String carNames = console.queryCarNames();
